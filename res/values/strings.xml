@@ -1,24 +1,43 @@
 <resources>
 
     <string-array name="types">
-        <item>FV</item>
-        <item>RATE</item>
-        <item>NPER</item>
-        <item>PMT</item>
+        <item>Future value</item>
+        <item>Annual rate</item>
+        <item>Period</item>
+        <item>Payment</item>
+        <item>Present value</item>
     </string-array>
-
+	<string-array name="intervals">
+	    <item>Weekly</item>
+	    <item>Biweekly</item>
+	    <item>Monthly</item>
+	    <item>Quarterly</item>
+	    <item>Yearly</item>
+	</string-array>
+	
     <string name="app_name">PICalculator</string>
-    <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">PICalculator</string>
-    <string name="PMT">PMT</string>
-    <string name="NPER">NPER</string>
-    <string name="RATE">RATE</string>
-    <string name="FV">FV</string>
-    <string name="type">type</string>
+    <string name="title_activity_main">Periodic Investment</string>
+    <string name="YEARS">years</string>
+    <string name="PERCENT">%</string>
+    <string name="DOLLAR">$</string>
+    <string name="PV">Present value</string>
+    <string name="RATE">Annual rate %</string>
+    <string name="RATE_HINT">per year</string>
+    <string name="PMT">Payment</string>
+    <string name="INTERVAL">Interval</string>
+    <string name="NPER">Period</string>
+    <string name="FV">Future value</string>
+    <string name="type">To calculate</string>
     <string name="calculate">Calculate</string>
-    <string name="note"></string>
     <string name="msgEdit_field_isNull">Please enter a correct value</string>
     <string name="msgCalculated">Calculated success</string>
+    <string name="periodTypeYear">Year</string>
+    <string name="periodTypeMonth">Month</string>
+    <string name="PLUSS">+</string>
+    <string name="MINUS">-</string>
+    <string name="total_value">Balance</string>
+    <string name="total_interest">Interest</string>
+    <string name="total_contributions">Total Payment"</string>
 
 </resources>

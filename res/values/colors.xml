@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="result">#A22A00</color>
-    <color name="gradient_low">#D6D2CE</color>
-    <color name="gradient_hi">#F8F6F1</color>    
+    <color name="gradient_low">#D5E3E6</color>
+    <color name="gradient_hi">#3E6B88</color>
+    <color name="buttonStart">#F0F0F0</color>
+    <color name="buttonStop">#C3C3C3</color>
+    <color name="buttonBorder">#C3C3C3</color>
+    <color name="buttonFocusStart">#FFC613</color>
+    <color name="buttonFocusStop">#EEA703</color>
+    <color name="buttonFocusBorder">#EA6700</color>
+    <color name="buttonPressedStart">#FFA03A</color>
+    <color name="buttonPressedStop">#EA6700</color>
+    <color name="buttonPressedBorder">#EA6700</color>
+    <color name="textEditBackground">#FFFFFF</color>
+    <color name="textEditBorder">#C3C3C3</color>
+    <color name="text">#3E6B88</color>
+    <color name="bk">#E5F3F6</color>
+
 </resources>

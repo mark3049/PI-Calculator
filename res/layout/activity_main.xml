@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background" >
+    android:background="@color/bk" >
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -20,132 +20,227 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:background="@layout/roundshape"
             android:orientation="horizontal"
-            android:padding="5dp" >
+            android:padding="2dp" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="@string/type" />
+                android:text="@string/type"
+                android:textColor="@color/text" />
 
             <Spinner
                 android:id="@+id/spinner_target"
-                android:layout_width="0dip"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:entries="@array/types" />
         </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#FF909090" />
 
         <TableLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:background="@layout/roundshape"
-            android:orientation="vertical"
-            android:padding="5dp" >
+            android:orientation="horizontal"
+            android:padding="2dp" >
 
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+            <TableRow>
 
                 <TextView
+                    android:id="@+id/TextPV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/PMT" />
+                    android:text="@string/PV"
+                    android:textColor="@color/text" />
 
                 <EditText
-                    android:id="@+id/editPMT"
-                    android:layout_width="0dip"
+                    android:id="@+id/editPV"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:inputType="numberDecimal" >
-                </EditText>
+                    android:inputType="numberDecimal" />
             </TableRow>
 
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+            <TableRow>
 
                 <TextView
+                    android:id="@+id/TextRATE"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/NPER" />
-
-                <EditText
-                    android:id="@+id/editNPER"
-                    android:layout_width="0dip"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:inputType="number" >
-                </EditText>
-            </TableRow>
-
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:text="@string/RATE" />
+                    android:text="@string/RATE"
+                    android:textColor="@color/text" />
 
                 <EditText
                     android:id="@+id/editRATE"
-                    android:layout_width="0dip"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:inputType="numberDecimal" >
-                </EditText>
+                    android:hint="@string/RATE_HINT"
+                    android:inputType="numberDecimal" />
             </TableRow>
 
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/TextPMT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/PMT"
+                    android:textColor="@color/text" />
+
+                <EditText
+                    android:id="@+id/editPMT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="numberDecimal" />
+            </TableRow>
+            
+            <TableRow>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/FV" />
+                    android:text="@string/INTERVAL"
+                    android:textColor="@color/text" />
+
+                <Spinner
+                    android:id="@+id/interval"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/intervals"
+                     />
+            </TableRow>
+            
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/TextFV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FV"
+                    android:textColor="@color/text" />
 
                 <EditText
                     android:id="@+id/editFV"
-                    android:layout_width="0dip"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:inputType="numberDecimal" >
-                </EditText>
+                    android:inputType="numberDecimal" />
             </TableRow>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/TextPeriod"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/NPER"
+                    android:textColor="@color/text" />
+
+                <include layout="@layout/period_new" />
+            </LinearLayout>
         </TableLayout>
 
-        <LinearLayout
+        <TableLayout
+            android:id="@+id/result"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:background="@layout/roundshape"
-            android:orientation="vertical"
+            android:background="@layout/periodblock"
             android:padding="5dp" >
 
-            <Button
-                android:id="@+id/eval_calcelate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/calculate" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#FF909090" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/note" />
-        </LinearLayout>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_value"
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/total_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/result" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_interest"
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/total_interest"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/result" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#FF909090" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_contributions"
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/total_payment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/result" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#FF909090" />
+        </TableLayout>
+
+        <Button
+            android:id="@+id/eval_calcelate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate" />
     </LinearLayout>
 
 </ScrollView>
