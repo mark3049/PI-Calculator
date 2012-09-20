@@ -34,6 +34,6 @@
     <string name="MINUS">-</string>
     <string name="total_value">預期收益</string>
     <string name="total_interest">累計利息</string>
-    <string name="total_contributions">累計扣款"</string>
+    <string name="total_contributions">累計扣款</string>
 
 </resources>

@@ -1,0 +1,39 @@
+<resources>
+
+    <string-array name="types">
+        <item>预期总收益</item>
+        <item>年利率</item>
+        <item>投资时间</item>
+        <item>每期投资金额</item>
+        <item>期初投资金额</item>
+    </string-array>
+	<string-array name="intervals">
+	    <item>每周</item>
+	    <item>双周</item>
+	    <item>每月</item>
+	    <item>每季</item>
+	    <item>每年</item>
+	</string-array>
+	
+    <string name="app_name">基金投资试算</string>
+    <string name="title_activity_main">基金投资试算</string>
+    <string name="PV">期初投资金额</string>
+    <string name="RATE">年利率 %</string>
+    <string name="RATE_HINT"></string>
+    <string name="PMT">每期投资金额</string>
+    <string name="INTERVAL">扣款周期</string>
+    <string name="NPER">投资时间</string>
+    <string name="FV">预期总收益</string>
+    <string name="type">计算项目</string>
+    <string name="calculate">计算</string>
+    <string name="msgEdit_field_isNull">清输入正确数值</string>
+    <string name="msgCalculated">计算完成</string>
+    <string name="periodTypeYear">年</string>
+    <string name="periodTypeMonth">月</string>
+    <string name="PLUSS">+</string>
+    <string name="MINUS">-</string>
+    <string name="total_value">预期收益</string>
+    <string name="total_interest">累计利息</string>
+    <string name="total_contributions">累计扣款</string>
+
+</resources>
