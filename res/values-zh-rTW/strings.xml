@@ -1,10 +1,10 @@
 <resources>
 
     <string-array name="types">
-        <item>期末金額</item>
+        <item>預期總收益</item>
         <item>年利率</item>
         <item>投資時間</item>
-        <item>定期定額</item>
+        <item>每期投資金額</item>
         <item>期初投資金額</item>
     </string-array>
 	<string-array name="intervals">
@@ -20,10 +20,10 @@
     <string name="PV">期初投資金額</string>
     <string name="RATE">年利率 %</string>
     <string name="RATE_HINT"></string>
-    <string name="PMT">定期定額</string>
+    <string name="PMT">每期投資金額</string>
     <string name="INTERVAL">扣款週期</string>
     <string name="NPER">投資時間</string>
-    <string name="FV">期末金額</string>
+    <string name="FV">預期總收益</string>
     <string name="type">計算項目</string>
     <string name="calculate">計算</string>
     <string name="msgEdit_field_isNull">清輸入正確數值</string>
@@ -32,7 +32,7 @@
     <string name="periodTypeMonth">月</string>
     <string name="PLUSS">+</string>
     <string name="MINUS">-</string>
-    <string name="total_value">累計金額</string>
+    <string name="total_value">預期收益</string>
     <string name="total_interest">累計利息</string>
     <string name="total_contributions">累計扣款"</string>
 
