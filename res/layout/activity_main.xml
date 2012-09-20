@@ -152,7 +152,7 @@
                     android:text="@string/NPER"
                     android:textColor="@color/text" />
 
-                <include layout="@layout/period_new" />
+                <include layout="@layout/period" />
             </LinearLayout>
         </TableLayout>
 

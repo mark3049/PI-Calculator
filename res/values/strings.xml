@@ -16,11 +16,7 @@
 	</string-array>
 	
     <string name="app_name">PICalculator</string>
-    <string name="menu_settings">Settings</string>
     <string name="title_activity_main">Periodic Investment</string>
-    <string name="YEARS">years</string>
-    <string name="PERCENT">%</string>
-    <string name="DOLLAR">$</string>
     <string name="PV">Present value</string>
     <string name="RATE">Annual rate %</string>
     <string name="RATE_HINT">per year</string>

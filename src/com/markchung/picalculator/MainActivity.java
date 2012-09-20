@@ -186,12 +186,15 @@ public class MainActivity extends Activity implements OnClickListener,
 	}
 
 	private void updateResult(double fv, double pv, int nper, double pmt) {
+		NumberFormat nr = NumberFormat.getNumberInstance();
+		nr.setMaximumFractionDigits(0);
+		
 		TextView view = (TextView) this.findViewById(R.id.total_value);
-		view.setText(Long.toString(Math.round((fv))));
+		view.setText(nr.format(fv));
 		view = (TextView) this.findViewById(R.id.total_interest);
-		view.setText(Long.toString(Math.round((fv - nper * pmt - pv))));
+		view.setText(nr.format(fv - nper * pmt - pv));
 		view = (TextView) this.findViewById(R.id.total_payment);
-		view.setText(Long.toString(Math.round((nper * pmt + pv))));
+		view.setText(nr.format(nper * pmt + pv));
 
 	}
 
@@ -199,8 +202,8 @@ public class MainActivity extends Activity implements OnClickListener,
 		int id = m_type.getSelectedItemPosition();
 		double pmt, rate, fv, pv;
 		int nper;
-		NumberFormat nr = NumberFormat.getNumberInstance();
-		nr.setMaximumFractionDigits(1);
+		//NumberFormat nr = NumberFormat.getNumberInstance();
+		//nr.setMaximumFractionDigits(1);
 		try {
 			switch (id) {
 			case ID_PV:
