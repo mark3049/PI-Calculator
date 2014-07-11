@@ -24,8 +24,8 @@ import android.widget.Toast;
 public class MainActivity extends Activity implements OnClickListener,
 		OnItemSelectedListener {
 	private static final String TAG = "picalculator";
-	private static final String myAdID = "a1505198753026e";
-	private static final String myTestDevice = "BA76119486D364D047D0C789B4F61E46";
+	private static final String myAdID = "ca-app-pub-3822862541892480/6790887035";
+	private static final String myTestDevice = "D7EA498B187E2AEFC1B647DA2A98CC64";
 	private static final String myTestDevice2 = "CF95DC53F383F9A836FD749F3EF439CD";
 	private AdView adview;
 	private Spinner m_type;
